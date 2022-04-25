@@ -1,0 +1,53 @@
+:root {
+  --color-white: rgba(205, 211, 215, 1);
+  --color-dark: rgba(37, 37, 37, 1);
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.main-conteiner {
+  background-image: url(./../images/cafe.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: right bottom;
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1em;
+  background-color: var(--color-dark);
+}
+.logo {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.8em;
+  text-transform: capitalize;
+}
+.nav-list {
+  list-style: none;
+  padding: inherit;
+  font-weight: bold;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.nav-list-item {
+  display: inline-block;
+}
+.nav-list-item + .nav-list-item {
+  margin-left: 1em;
+}
+.contact-btn {
+  padding: 0.5em;
+  border: 1px solid var(--color-white);
+  border-radius: 3px;
+  background-color: var(--color-dark);
+}
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
